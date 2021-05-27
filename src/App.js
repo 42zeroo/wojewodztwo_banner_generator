@@ -60,7 +60,11 @@ function App() {
   return (
     <div>
       <div className="App" id="to-render">
-        <img alt="image" className="to-render--background-image" src={image} />
+        <img
+          alt="tojestsuperobrazek"
+          className="to-render--background-image"
+          src={image}
+        />
         <div data-logo-src={`url(${logo})`} className="to-render--logo" />
         <p className="to-render--header">{text}</p>
         <p className="to-render--header-wojewodztwo">
