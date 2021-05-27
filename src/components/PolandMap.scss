@@ -1,0 +1,74 @@
+.poland-map--container{
+    svg{
+        width: 500px;
+        height: 300px;
+    }
+    .background{
+        fill: transparent;
+        stroke: transparent;
+    }
+    g path{
+        fill: #fff;
+    }
+    .filled path{
+        fill: #5498dc;
+    }
+}
+.to-render--background-image{
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .to-render--background-image img{
+    object-fit: cover;
+    z-index: -1;
+  }
+  .to-render--header{
+    z-index: 2;
+    color: white;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(0,0,0,0.59);
+    font-size: 42px;
+    max-width: 430px;
+    text-align: left;
+    margin-bottom: 0;
+    padding-left: 50px;
+  }
+  .to-render--header-wojewodztwo{
+    z-index: 2;
+    color: white;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(0,0,0,0.59);
+    font-size: 42px;
+    max-width: 500px;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 0;
+  }
+  .poland-map--container {
+      position: absolute;
+      position: absolute;
+      right: 0px;
+      bottom: 74px;
+      svg{
+            width: 600px;
+            height: 400px;   
+      }
+  }
+  #to-render{
+    position: relative;
+    height: 600px;
+    width: 1000px;
+  }
+.to-render--logo{
+    background: url(./agencja-innowacji.png);
+    width: 450px;
+    height: 140px;
+    background-position-y: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 45%;
+
+}
