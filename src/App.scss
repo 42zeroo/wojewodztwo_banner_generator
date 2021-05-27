@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: -42px;
 }
 
 .App-logo {
@@ -34,5 +37,39 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.form{
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#to-render{
+  position: relative;
+  
+  .to-render--logo{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 450px;
+    height: 140px;
+    object-fit: contain;
+  }
+  .to-render--header{
+    padding-top: 140px;
+    text-align: right;
+    max-width: 420px;
+    
+  }
+  .to-render--header-wojewodztwo{
+    max-width: 420px;
+    font-size: 32px;
+    text-align: right;
+  }
+  .to-render--logo::before{
+    display: none;
   }
 }
