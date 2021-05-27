@@ -33,15 +33,11 @@ function App() {
         ref={toRenderRef}
       >
         <img
-          alt="Upload image for background first!"
+          alt="background--for--render"
           className="to-render--background-image"
           src={image}
         />
-        <img
-          src={logo}
-          alt="Upload image for logo first!"
-          className="to-render--logo"
-        />
+        <img src={logo} alt="logo--for--render" className="to-render--logo" />
         <p className="to-render--header">{text}</p>
         <p className="to-render--header-wojewodztwo">
           w wojewodztwie {inWojewodztwoTranslator(wojewodztwoToFill)}
