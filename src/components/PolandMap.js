@@ -37,6 +37,8 @@ const PolandMap = ({ wojewodztwoToFill }) => {
         return "Podlaskie";
       case "Mazowieckie":
         return "Mazowieckie";
+      default:
+        return "";
     }
   };
   const mapRef = useRef();
