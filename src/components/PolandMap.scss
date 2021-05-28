@@ -1,4 +1,11 @@
 .poland-map--container{
+  position: relative;
+    right: 0;
+    bottom: 74px;
+    width: 50%;
+    float: right;
+    margin-top: -155px;
+    margin-right: 62px;
     svg{
         width: 500px;
         height: 300px;
@@ -13,6 +20,7 @@
     .filled path{
         fill: #5498dc;
     }
+    
 }
 .to-render--background-image{
     height: 600px;
@@ -62,12 +70,3 @@
     height: 600px;
     width: 1000px;
   }
-.to-render--logo{
-    width: 450px;
-    height: 140px;
-    background-position-y: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 45%;
-
-}

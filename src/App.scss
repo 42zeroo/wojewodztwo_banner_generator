@@ -51,12 +51,14 @@
   position: relative;
   
   .to-render--logo{
-    position: absolute;
-    top: 20px;
-    right: 30px;
+    position: relative;
     width: 450px;
-    height: 140px;
-    object-fit: contain;
+    padding-right: 100px;
+    background-repeat: no-repeat;
+    margin-left: 45%;
+    margin-top: 42px;
+    display: block;
+    padding-top: 21px;
   }
   .to-render--header{
     padding-top: 140px;
