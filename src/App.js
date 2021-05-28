@@ -28,7 +28,7 @@ function App() {
         className="App"
         id="to-render"
         style={{
-          backgroundColor: !image ? "#03359e" : "transparent",
+          backgroundColor: !image ? "#03359e" : "rgba(138, 163, 255, 0.3)",
         }}
         ref={toRenderRef}
       >
