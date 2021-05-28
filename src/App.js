@@ -32,31 +32,33 @@ function App() {
         }}
         ref={toRenderRef}
       >
-        <img
-          style={{
-            display: !image ? "none" : "flex",
-          }}
-          alt="background--for--render"
-          className="to-render--background-image"
-          src={image}
-        />
-        <img
-          src={logo}
-          style={{
-            display: !logo ? "none" : "flex",
-          }}
-          alt="logo--for--render"
-          className="to-render--logo"
-        />
-        <p className="to-render--header">{text}</p>
-        <p className="to-render--header-wojewodztwo">
-          w wojewodztwie {inWojewodztwoTranslator(wojewodztwoToFill)}
-        </p>
+        <div>
+          <img
+            style={{
+              display: !image ? "none" : "flex",
+            }}
+            alt="background--for--render"
+            className="to-render--background-image"
+            src={image}
+          />
+          <img
+            src={logo}
+            style={{
+              display: !logo ? "none" : "flex",
+            }}
+            alt="logo--for--render"
+            className="to-render--logo"
+          />
+          <p className="to-render--header">{text}</p>
+          <p className="to-render--header-wojewodztwo">
+            w wojewodztwie {inWojewodztwoTranslator(wojewodztwoToFill)}
+          </p>
 
-        <PolandMap
-          className="poland-map"
-          wojewodztwoToFill={wojewodztwoToFill}
-        />
+          <PolandMap
+            className="poland-map"
+            wojewodztwoToFill={wojewodztwoToFill}
+          />
+        </div>
       </div>
       <div className="form">
         <div>
