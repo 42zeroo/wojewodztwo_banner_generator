@@ -1,37 +1,41 @@
 const inWojewodztwoTranslator = (wojName) => {
   switch (wojName) {
     case "Lubelskie":
-      return "Lubelskim";
+      return "w wojewodztwie Lubelskim";
     case "Podlaskie":
-      return "Podlaskim";
+      return "w wojewodztwie Podlaskim";
     case "Mazowieckie":
-      return "Mazowieckim";
+      return "w wojewodztwie Mazowieckim";
     case "Podkarpackie":
-      return "Podkarpackim";
+      return "w wojewodztwie Podkarpackim";
     case "Malopolskie":
-      return "Małopolskim";
+      return "w wojewodztwie Małopolskim";
     case "Swietokrzyskie":
-      return "Świętokrzyskim";
+      return "w wojewodztwie Świętokrzyskim";
     case "Warminsko-Mazurskie":
-      return "Warmińsko-Mazurskim";
+      return "w wojewodztwie Warmińsko-Mazurskim";
     case "Kujawsko-Pomorskie":
-      return "Kujawsko-Pomorskim";
+      return "w wojewodztwie Kujawsko-Pomorskim";
     case "Pomorskie":
-      return "Pomorskim";
+      return "w wojewodztwie Pomorskim";
     case "Zachodniopomorskie":
-      return "Zachodniopomorskim";
+      return "w wojewodztwie Zachodniopomorskim";
     case "Lubuskie":
-      return "Lubuskim";
+      return "w wojewodztwie Lubuskim";
     case "Dolnoslaskie":
-      return "Dolnośląskim";
+      return "w wojewodztwie Dolnośląskim";
     case "Lodzkie":
-      return "Łódzkim";
+      return "w wojewodztwie Łódzkim";
     case "Wielkopolskie":
-      return "Wielkopolskim";
+      return "w wojewodztwie Wielkopolskim";
     case "Slaskie":
-      return "Śląskim";
+      return "w wojewodztwie Śląskim";
     case "Opolskie":
-      return "Opolskim";
+      return "w wojewodztwie Opolskim";
+    case "Cala Polska":
+      return "na terenie całego kraju";
+    case "Polska Wschodnia":
+      return "na terenie Polski Wschodniej";
     default:
       return "";
   }

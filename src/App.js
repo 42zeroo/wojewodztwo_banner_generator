@@ -53,7 +53,7 @@ function App() {
           />
           <p className="to-render--header">{text}</p>
           <p className="to-render--header-wojewodztwo">
-            w wojewodztwie {inWojewodztwoTranslator(wojewodztwoToFill)}
+            {inWojewodztwoTranslator(wojewodztwoToFill)}
           </p>
 
           <PolandMap
