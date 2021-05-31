@@ -14,12 +14,14 @@ const PolandMap = ({ wojewodztwoToFill }) => {
   useEffect(() => {
     const allG = mapRef.current.getElementsByTagName("g");
     if (wojewodztwoToFill === "Cala Polska") {
-      for (var k = 0; k < allG.length; k++) allG[k]?.classList.add("filled");
+      for (var k = 0; k < allG.length; k++)
+        allG[k]?.classList.add("filled-whole");
       return;
     }
     if (wojewodztwoToFill === "Polska Wschodnia") {
       for (var w = 0; w < allG.length; w++) {
         allG[w]?.classList.remove("filled");
+        allG[w]?.classList.remove("filled-whole");
         for (var f = 0; f < wojewodztwaPolskaWschodnia.length; f++) {
           if (
             allG[w] !== undefined &&
@@ -34,6 +36,7 @@ const PolandMap = ({ wojewodztwoToFill }) => {
     }
     for (var i = 0; i < allG.length; i++) {
       allG[i]?.classList.remove("filled");
+      allG[w]?.classList.remove("filled-whole");
       if (
         allG[i] !== undefined &&
         allG[i]?.attributes["data-q-text"]?.value === wojewodztwoToFill
