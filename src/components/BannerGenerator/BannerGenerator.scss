@@ -1,0 +1,40 @@
+
+.form{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  #to-render{
+    width: 1400px;
+    height: 700px;
+    position: relative;
+    
+    .to-render--logo{
+      position: relative;
+      width: 450px;
+      padding-right: 100px;
+      background-repeat: no-repeat;
+      margin-left: 45%;
+      margin-top: 62px;
+      display: block;
+      padding-top: 21px;
+    }
+    .to-render--header{
+      text-align: right;
+      max-width: 700px;
+      
+    }
+    .to-render--header-wojewodztwo{
+      max-width: 700px;
+      font-size: 52px;
+      text-align: right;
+    }
+    .to-render--logo::before{
+      display: none;
+    }
+    .to-render--content-wrapper{
+      width: 1400px;
+      height: 700px;
+    }
+  }

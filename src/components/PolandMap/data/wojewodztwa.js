@@ -15,8 +15,6 @@ const wojewodztwa = [
   { polish: "Mazowieckie", raw: "Mazowieckie" },
   { polish: "Podlaskie", raw: "Podlaskie" },
   { polish: "Śląskie", raw: "Slaskie" },
-  { polish: "Polska Wschodnia", raw: "Polska Wschodnia" },
-  { polish: "Cała Polska", raw: "Cala Polska" },
 ];
 
 export default wojewodztwa;

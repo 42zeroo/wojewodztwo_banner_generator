@@ -7,7 +7,8 @@
     margin-top: -155px;
     margin-right: 162px;
     svg{
-        width: 1000px;
+        width: 650px;
+        margin-left: 150px;
         height: 500px;
     }
     .background{
@@ -27,7 +28,7 @@
 }
 .to-render--background-image{
     height: 700px;
-    width: 1400px;
+    width: 650px;
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -59,8 +60,4 @@
     margin-top: 0;
   }
   
-  #to-render{
-    position: relative;
-    height: 600px;
-    width: 1000px;
-  }
+

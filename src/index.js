@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import BannerGenerator from "./components/BannerGenerator";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BannerGenerator idToRender="to-render" />
   </React.StrictMode>,
   document.getElementById("root")
 );
