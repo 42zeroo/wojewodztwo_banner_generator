@@ -13,6 +13,8 @@
     .to-render--logo{
       position: relative;
       width: 450px;
+      min-height: 70px;
+      max-height: 120px;
       padding-right: 100px;
       background-repeat: no-repeat;
       margin-left: 45%;
@@ -22,11 +24,11 @@
     }
     .to-render--header{
       text-align: right;
-      max-width: 700px;
+      max-width: 680px;
       
     }
     .to-render--header-wojewodztwo{
-      max-width: 700px;
+      max-width: 680px;
       font-size: 52px;
       text-align: right;
     }

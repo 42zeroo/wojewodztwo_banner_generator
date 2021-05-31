@@ -27,7 +27,14 @@ const ToRenderArea = ({ image, toRenderId, logo, text, whatToFill }) => {
           alt="logo--for--render"
           className="to-render--logo"
         />
-        <p className="to-render--header">{text}</p>
+        <p
+          style={{
+            paddingTop: typeof logo === "undefined" ? "130px" : "0px",
+          }}
+          className="to-render--header"
+        >
+          {text}
+        </p>
         <p className="to-render--header-wojewodztwo">
           {inWojewodztwoTranslator(whatToFill)}
         </p>
