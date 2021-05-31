@@ -2,7 +2,7 @@ const saveAs = (blob, fileName) => {
   var elem = window.document.createElement("a");
   elem.href = blob;
   elem.download = fileName;
-  elem.style = "display:none;";
+  elem.style = "display:flex;";
   (document.body || document.documentElement).appendChild(elem);
   if (typeof elem.click === "function") {
     elem.click();

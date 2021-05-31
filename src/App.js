@@ -28,11 +28,13 @@ function App() {
         className="App"
         id="to-render"
         style={{
+          width: "1400px",
+          height: "700px",
           backgroundColor: !image ? "#03359e" : "rgba(138, 163, 255, 0.3)",
         }}
         ref={toRenderRef}
       >
-        <div>
+        <div style={{ width: "1000px", height: "700px" }}>
           <img
             style={{
               display: !image ? "none" : "flex",
@@ -58,6 +60,7 @@ function App() {
             className="poland-map"
             wojewodztwoToFill={wojewodztwoToFill}
           />
+          <p style={{ float: "right", opacity: "0" }}>xd</p>
         </div>
       </div>
       <div className="form">

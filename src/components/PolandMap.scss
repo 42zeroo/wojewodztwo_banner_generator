@@ -1,14 +1,14 @@
 .poland-map--container{
-  position: relative;
+  position: absolute;
     right: 0;
     bottom: 74px;
     width: 50%;
     float: right;
     margin-top: -155px;
-    margin-right: 62px;
+    margin-right: 162px;
     svg{
-        width: 500px;
-        height: 300px;
+        width: 1000px;
+        height: 500px;
     }
     .background{
         fill: transparent;
@@ -23,8 +23,8 @@
     
 }
 .to-render--background-image{
-    height: 600px;
-    width: 1000px;
+    height: 900px;
+    width: 1100px;
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -39,8 +39,8 @@
     z-index: 2;
     color: white;
     text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(0,0,0,0.59);
-    font-size: 42px;
-    max-width: 445px;
+    font-size: 62px;
+    max-width: 845px;
     text-align: left;
     margin-bottom: 0;
     padding-left: 50px;
@@ -49,22 +49,13 @@
     z-index: 2;
     color: white;
     text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(0,0,0,0.59);
-    font-size: 42px;
-    max-width: 500px;
+    font-size: 56px;
+    max-width: 700px;
     text-align: left;
     padding-left: 50px;
     margin-top: 0;
   }
-  .poland-map--container {
-      position: absolute;
-      position: absolute;
-      right: 0px;
-      bottom: 74px;
-      svg{
-            width: 600px;
-            height: 400px;   
-      }
-  }
+  
   #to-render{
     position: relative;
     height: 600px;
