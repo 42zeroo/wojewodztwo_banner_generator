@@ -1,6 +1,6 @@
 # PREVIEW LINK
 
-Demo: [👉 Preview 👈](https://zen-yalow-706c5e.netlify.app).
+Demo: [👉 Preview 👈](https://vibrant-khorana-99fb9a.netlify.app/).
 
 # Getting Started with Create React App
 
