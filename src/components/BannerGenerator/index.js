@@ -10,19 +10,19 @@ const BannerGenerator = ({ idToRender }) => {
   const [wojewodztwoToFill, setWojewodztwoToFill] = useState("");
   return (
     <>
-      <ToRenderArea
-        image={image}
-        toRenderId={idToRender}
-        logo={logo}
-        text={text}
-        whatToFill={wojewodztwoToFill}
-      />
       <Form
         idToRender={idToRender}
         setImage={setImage}
         setLogo={setLogo}
         setText={setText}
         setWojewodztwoToFill={setWojewodztwoToFill}
+      />
+      <ToRenderArea
+        image={image}
+        toRenderId={idToRender}
+        logo={logo}
+        text={text}
+        whatToFill={wojewodztwoToFill}
       />
     </>
   );
