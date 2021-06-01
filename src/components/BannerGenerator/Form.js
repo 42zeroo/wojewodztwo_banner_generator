@@ -60,23 +60,20 @@ const Form = ({
         />
       </div>
       <div>
-        <FormControl>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            onChange={(e) => setWojewodztwoToFill(e.target.value)}
-          >
-            {wojewodztwa.map((w) => (
-              <>
-                <MenuItem value={w.raw}>{w.polish}</MenuItem>
-              </>
-            ))}
-            {areas.map((a) => (
-              <MenuItem value={a.raw}>{a.polish}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
+        <select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          onChange={(e) => setWojewodztwoToFill(e.target.value)}
+        >
+          {wojewodztwa.map((w) => (
+            <>
+              <MenuItem value={w.raw}>{w.polish}</MenuItem>
+            </>
+          ))}
+          {areas.map((a) => (
+            <MenuItem value={a.raw}>{a.polish}</MenuItem>
+          ))}
+        </select>
       </div>
 
       <Button color="primary" onClick={() => exportAsPicture(idToRender)}>
