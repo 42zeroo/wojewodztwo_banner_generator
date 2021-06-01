@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+formimport React, { useState } from "react";
 import ToRenderArea from "./ToRenderArea";
 import Form from "./Form";
 import "./BannerGenerator.scss";

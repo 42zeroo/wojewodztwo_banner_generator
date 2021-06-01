@@ -7,28 +7,29 @@
   
   #to-render{
     width: 1400px;
-    height: 700px;
+    height: 1000px;
     position: relative;
     
     .to-render--logo{
       position: relative;
-      width: 450px;
-      min-height: 70px;
+      width: 500px;
+      min-height: 90px;
       max-height: 120px;
       padding-right: 100px;
       background-repeat: no-repeat;
-      margin-left: 45%;
+      margin-left: 55%;
       display: block;
       padding-top: 21px;
     }
     .to-render--header{
       text-align: right;
       max-width: 680px;
+      padding-top: 44px;
       
     }
     .to-render--header-wojewodztwo{
       max-width: 680px;
-      font-size: 52px;
+      font-size: 58px;
       text-align: right;
     }
     .to-render--logo::before{
@@ -36,7 +37,8 @@
     }
     .to-render--content-wrapper{
       width: 1400px;
-      height: 700px;
+      height: 1000px;
+      padding-top: 196px;
     }
   }
   
