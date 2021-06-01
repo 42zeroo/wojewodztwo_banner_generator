@@ -16,6 +16,7 @@ const BannerGenerator = ({ idToRender }) => {
         setLogo={setLogo}
         setText={setText}
         setWojewodztwoToFill={setWojewodztwoToFill}
+        wojewodztwoToFill={wojewodztwoToFill}
       />
       <ToRenderArea
         image={image}

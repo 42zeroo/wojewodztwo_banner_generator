@@ -2,6 +2,14 @@ import React from "react";
 import wojewodztwa from "../PolandMap/data/wojewodztwa";
 import areas from "../PolandMap/data/areas";
 import exportAsPicture from "../../functions/exportAsPicture";
+import {
+  InputLabel,
+  FormControl,
+  Button,
+  TextField,
+  MenuItem,
+  Select,
+} from "@material-ui/core";
 
 const Form = ({
   idToRender,
@@ -9,6 +17,7 @@ const Form = ({
   setLogo,
   setText,
   setWojewodztwoToFill,
+  wojewodztwoToFill,
 }) => {
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -43,37 +52,36 @@ const Form = ({
       </div>
 
       <div>
-        <p>Tekst:</p>{" "}
-        <input type="textarea" onChange={(e) => setText(e.target.value)} />
+        <TextField
+          label="Tekst banneru"
+          multiline
+          rows={4}
+          onChange={(e) => setText(e.target.value)}
+        />
       </div>
       <div>
-        <p>Województwo:</p>
-        <select
-          onChange={(e) => setWojewodztwoToFill(e.target.value)}
-          name="woj"
-          id="woj"
-        >
-          {wojewodztwa.map((w) => (
-            <>
-              <option value={w.raw}>{w.polish}</option>
-            </>
-          ))}
-          {areas.map((a) => (
-            <option value={a.raw}>{a.polish}</option>
-          ))}
-        </select>
+        <FormControl>
+          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            onChange={(e) => setWojewodztwoToFill(e.target.value)}
+          >
+            {wojewodztwa.map((w) => (
+              <>
+                <MenuItem value={w.raw}>{w.polish}</MenuItem>
+              </>
+            ))}
+            {areas.map((a) => (
+              <MenuItem value={a.raw}>{a.polish}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </div>
 
-      <button
-        style={{
-          width: "175px",
-          background: "transparent",
-          border: "5px solid #000ff0",
-        }}
-        onClick={() => exportAsPicture(idToRender)}
-      >
+      <Button color="primary" onClick={() => exportAsPicture(idToRender)}>
         Wygeneruj obrazek
-      </button>
+      </Button>
     </div>
   );
 };
