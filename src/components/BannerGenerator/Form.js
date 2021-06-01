@@ -2,14 +2,7 @@ import React from "react";
 import wojewodztwa from "../PolandMap/data/wojewodztwa";
 import areas from "../PolandMap/data/areas";
 import exportAsPicture from "../../functions/exportAsPicture";
-import {
-  InputLabel,
-  FormControl,
-  Button,
-  TextField,
-  MenuItem,
-  Select,
-} from "@material-ui/core";
+import { Button, TextField } from "@material-ui/core";
 
 const Form = ({
   idToRender,
@@ -67,11 +60,11 @@ const Form = ({
         >
           {wojewodztwa.map((w) => (
             <>
-              <MenuItem value={w.raw}>{w.polish}</MenuItem>
+              <option value={w.raw}>{w.polish}</option>
             </>
           ))}
           {areas.map((a) => (
-            <MenuItem value={a.raw}>{a.polish}</MenuItem>
+            <option value={a.raw}>{a.polish}</option>
           ))}
         </select>
       </div>
