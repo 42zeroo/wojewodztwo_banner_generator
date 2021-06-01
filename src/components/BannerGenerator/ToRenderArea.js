@@ -29,7 +29,7 @@ const ToRenderArea = ({ image, toRenderId, logo, text, whatToFill }) => {
         />
         <p
           style={{
-            paddingTop: typeof logo === "undefined" ? "130px" : "0px",
+            paddingTop: typeof logo === "undefined" ? "130px" : "44px",
           }}
           className="to-render--header"
         >
